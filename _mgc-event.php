@@ -39,20 +39,18 @@
 	<h3 property="name" class="mgc-summary"><?=$summary?></h3>
 	<p class="mgc-dates">
 		<meta property="startDate" content="<?=date('c', $startTS)?>">
-			<span class='mgc-start-date'><?=$startDate?></span>
-			<? if($startTime): ?>
-				<span class='mgc-start-time'><?=$startTime?></span>
-			<? endif; ?>
-		</meta>
+		<span class='mgc-start-date'><?=$startDate?></span>
+		<? if($startTime): ?>
+			<span class='mgc-start-time'><?=$startTime?></span>
+		<? endif; ?>
 		<? if($endDate || $endTime): ?> – 
 			<meta property="endDate" content="<?=date('c', $endTS)?>">
-				<? if($endDate): ?>
-					<span class='mgc-end-date'><?=$endDate?></span>
-				<? endif; ?>	
-				<? if($endTime): ?>
-					<span class='mgc-end-time'><?=$endTime?></span>
-				<? endif; ?>
-			</meta>
+			<? if($endDate): ?>
+				<span class='mgc-end-date'><?=$endDate?></span>
+			<? endif; ?>	
+			<? if($endTime): ?>
+				<span class='mgc-end-time'><?=$endTime?></span>
+			<? endif; ?>
 		<? endif; ?>
 	</p>
 	<? if($location): ?> 
